@@ -241,6 +241,12 @@ default         0;
     sudo ufw allow 6133/tcp
     sudo ufw allow 6233/tcp
     sudo ufw allow 6333/tcp
+    sudo ufw allow 6343/tcp
+    sudo ufw allow 6234/tcp
+    sudo ufw allow 6235/tcp
+    sudo ufw allow 6236/tcp
+    sudo ufw allow 6237/tcp
+    sudo ufw allow 6238/tcp
     sudo ufw allow 6433/tcp
     sudo ufw allow 7433/tcp
     sudo ufw allow 8333/tcp
@@ -280,7 +286,7 @@ default         0;
     
     # Compil Blocknotify
     cd ~
-    git clone https://github.com/tpruvot/yiimp.git
+    git clone https://github.com/toratella/yiimp
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     sudo make
